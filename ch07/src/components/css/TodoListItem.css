@@ -1,0 +1,46 @@
+.TodoListItem {
+   display: flex;
+   align-items: center;
+   padding: 1rem;
+}
+
+.TodoListItem:nth-child(even) {
+   background: #f8f9fa;
+}
+
+.TodoListItem .checkbox {
+   display: flex;
+   flex: 1;
+   align-items: center;
+   cursor: pointer;
+}
+
+.TodoListItem .checkbox svg {
+   font-size: 1.5rem;
+}
+
+.TodoListItem .checkbox .text {
+   flex: 1;
+   margin-left: 0.5rem;
+}
+
+.TodoListItem .checkbox.checked svg {
+   color: #22b8cf;
+}
+
+.TodoListItem .checkbox.checked .text {
+   color: #adb5bd;
+   text-decoration: line-through;
+}
+
+.TodoListItem .remove {
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+   color: #c72d2d;
+   font-size: 1.5rem;
+}
+
+.TodoListItem .remove:hover {
+   color: #ff8787;
+}
