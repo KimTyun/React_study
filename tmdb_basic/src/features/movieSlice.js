@@ -8,7 +8,7 @@ export const fetchMovies = createAsyncThunk('movies/fecthMovies', async () => {
 
 export const fetchMovieDetails = createAsyncThunk('movies/fetchMovieDetails', async (movieId) => {
    const response = await getMovieDetails(movieId)
-   console.log(response.data)
+
    return response.data
 })
 
